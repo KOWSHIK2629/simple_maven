@@ -1,9 +1,12 @@
 package com.example;
 
-import static org.junit.Assert.assertEquals; import org.junit.Test;
+public class App {
+public static String calculateGrade(int marks) { if (marks >= 90) return "A";
+else if (marks >= 80) return "B";
+else if (marks >= 70) return "C"; else if (marks >= 60) return "D"; else return "F";
+}
 
-public class AppTest { @Test
-public void testCalculateGrade() {
-assertEquals("A", App.calculateGrade(95)); assertEquals("B", App.calculateGrade(85)); assertEquals("C", App.calculateGrade(75)); assertEquals("D", App.calculateGrade(65)); assertEquals("F", App.calculateGrade(50));
+public static void main(String[] args) {
+System.out.println("Grade for 85: " + calculateGrade(85));
 }
 }
