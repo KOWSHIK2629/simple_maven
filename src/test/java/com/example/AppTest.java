@@ -1,10 +1,9 @@
 package com.example;
-import org.junit.Test;
-import static org.junit.Assert.*;
-public class AppTest {
-@Test
-public void testAdd() {
-App app = new App();
-assertEquals(5, app.add(2, 3));
+
+import static org.junit.Assert.assertEquals; import org.junit.Test;
+
+public class AppTest { @Test
+public void testCalculateGrade() {
+assertEquals("A", App.calculateGrade(95)); assertEquals("B", App.calculateGrade(85)); assertEquals("C", App.calculateGrade(75)); assertEquals("D", App.calculateGrade(65)); assertEquals("F", App.calculateGrade(50));
 }
 }
